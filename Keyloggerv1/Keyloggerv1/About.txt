@@ -1,0 +1,16 @@
+GetAsyncKeystate:
+	if (GetAsyncKeyState(key) & 0x8000) { 
+	used to be
+	if (GetAsyncKeyState(key) == -32767) { 
+	Now the -32767 is the decimal version of 0x8000 so with GetAsyncKeyState 0x8000 means the key is pressed down. 
+	-32767 = 1000 0000 0000 0001 and that means if it returns that number it says it was pressed and released at the same time.
+	So if you single out the thing we want (was it pressed) we have a hex value 0x8000
+	BUT
+	if you do that it will print the key multiple times depending on how long it was held
+	so if you use the release key and the press key at the same time it will only output or print 1 of the keys.
+TLDR;
+	Says if the key is being pressed do something.
+
+HEX AND ASCII:
+	Because Downkey has no ascii they added one in. SO you need to use the hex value as every key has a hex value and cant be overwritten/overlapping
+	Referense http://www.cplusplus.com/doc/ascii/

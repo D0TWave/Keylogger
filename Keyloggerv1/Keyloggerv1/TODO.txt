@@ -1,0 +1,7 @@
+1.) Get c++ to read a file and check the hex e.g checks for the first line in hex
+2.) Get it if you hold shift it types it once. e.g [shift]8 insted of [shift][shift]8
+3.) Get it so if you type shift and a number in a certain ammount of time it makes a special character e.g * insted of [shift]8
+4.) If caps was pressed before and pressed again type caps off also if caps off it does small leters.
+5.) find all missing keys so you don't get [] stupid box
+6.) Get hidden window
+7.) Get startup process
